@@ -7,16 +7,16 @@ class Cdi < Formula
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/ltgiant/cdi/releases/download/v#{version}/cdi-aarch64-apple-darwin.tar.gz"
-      sha256 "ec4873098edbafd38d8e175ea5f43c2f3261e6983de4be6eb88073ded1108206"
+      sha256 "ab993927336b204372c06671516cc392439f700f6fa2ffaab6d751f1875f2155"
     else
       url "https://github.com/ltgiant/cdi/releases/download/v#{version}/cdi-x86_64-apple-darwin.tar.gz"
-      sha256 "ec1c3519a620b243f4a28bfbbc8488b06bc33da3076635b8d2f8785180cfdef5"
+      sha256 "e14ce3d6772c73f4baaa17b435cc83a09749352832e9d3085df8628bd8ed0cf9"
     end
   end
 
   on_linux do
     url "https://github.com/ltgiant/cdi/releases/download/v#{version}/cdi-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "1c92080eb6611062daa723a91372a062b1f1b00170d74156072377ce438d2826"
+    sha256 "61d8d302dab3fa060a6a45f3e59ba2c8ffebcebdd79f07c26414eae35a8c28d5"
   end
 
   def install
